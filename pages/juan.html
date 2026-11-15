@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Myself</title>
+    <script src="javaScriptSection.js" defer></script>
+    <style>
+        p {
+            color: #FFF4BF;
+        }
+
+        h1 {
+            color: #FFF4BF;
+        }
+
+        body {
+            font-family: 'Intern', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Georgia', sans-serif;
+            letter-spacing: -0.03em;
+            color: #FFF4BF
+        }
+
+        .biography {
+            background-color: rgba(35, 15, 65, 0.85);
+            color: #FFF4BF;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            padding: 1.5em;
+            margin: 1em;
+            border: 2px solid #E6C77A;
+            border-radius: 10px;
+            overflow: auto;
+        }
+
+        .socialLink {
+            display: inline-block;
+            background-color: rgba(35, 15, 65, 0.85);
+            color: #FFF4BF;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            text-decoration: none;
+            padding: 15px 25px;
+            margin: 10px;
+            border: 2px solid #E6C77A;
+            border-radius: 8px
+        }
+
+        #cover {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+        }
+
+        #cover img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 200px;
+            transition: opacity 4s ease-in-out;
+        }
+
+        #cover img.top:hover {
+            opacity: 0;
+        }
+
+        #canvas {
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        #canvas td {
+            width: 5px;
+            height: 5px;
+            padding: 0;
+            border: 1px solid #ddd;
+        }
+
+        #canvas td.blue {
+            background-color: blue;
+        }
+
+        #canvas td.red {
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body style="background-image: url('background.png');">
+
+    <h1 style="">Juan Diego Sanchez</h1>
+
+    <img src="myPicture.jpeg" style="width: 350px; height: 500px; float: left;" alt="Image of myself">
+
+    <section class="biography">
+        <p style="font-size: 130%;">
+            My name is Juan Diego Sanchez. I was born in Mexico and I immigrated to the United States
+            in 2018 when I was 13 years old. I'm currently majoring in Computer Science and I study at
+            University of Houston Downtown due to its accessibility and welcoming environment.
+            I'm studying this major because ever since I was a kid I found technology and systems very
+            interesting, and I was the type of kid that would spent an infinite amount of time on a
+            computer searching on the web or playing with unknown software. I really like playing games
+            that require a lot of thinking and strategy, like card games, chess, and even competitive
+            Pokémon, given that not only you have to know what you are doing, but also you must be able
+            to predict what your opponent is planning, otherwise you will lose. My objective for this
+            semester is to pass all my classes, of course, but also to accumulate all the knowledge I
+            can so I can use it to develop projects and/or apply such knowledge in my future job, given
+            that it is expected that I will graduate in May of 2027.
+        </p>
+
+        <p style="font-size: 130%;">
+            I've developed some interesting project throughout my career as a student, for instance,
+            a machine learning model that aims to assist other fellow CS majors whenever they have
+            questions about different topics across different subjects of the career. I also collaborated
+            with a team of students on developing a hospital system that aimed to keep track of patient's
+            appointments, records, prescriptions, payments etc, as well as it helped doctors and nurses
+            to keep track of patients and their corresponding data.
+        </p>
+    </section>
+
+    <p></p>
+
+    <a class="socialLink" href="https://github.com/Diegoxiz/Diegoxiz">
+        <p style="font-size: 130%; font-family: 'times new roman', sans-serif; "><strong>Link to my GitHub page</strong>
+        </p>
+    </a>
+
+    <a class="socialLink" href="https://www.linkedin.com/in/diego-sanchez-794138335/">
+        <p style="font-size: 130%; font-family: 'times new roman', sans-serif;"><strong>Link to my LinkedIn
+                page</strong></p>
+    </a>
+
+    <img src="milaneso.jpeg" style="float: right; width: 250px; height: 350px;" alt="Picture of Milaneso">
+
+    <section class="biography">
+        <p style="font-size: 130%; ">
+            I also have a cat, his name is Milaneso. He used to be a stray cat that happened to just
+            arrived to my house one day and never left. He is super lovely and doesn't mind being around
+            people, other cats or even other animals. He just loves eating and sleeping all day.
+            And as long as you pet him in the back or the neck, he will always approach you and give
+            you some love.
+        </p>
+    </section>
+
+    <div style="display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 20px;">
+
+        <section class="biography">
+            <div>
+
+                <ul>
+
+                    <li>
+                        <p style="font-size: 130%;">Some of my favorite songs are:</p>
+
+                        <ul>
+
+                            <li>
+                                <p style="font-size: 130%;">Take Care of Her by Jutes</p>
+                            </li>
+
+                            <li>
+                                <p style="font-size: 130%;">Roads Untraveled by Linkin Park</p>
+                            </li>
+
+                            <li>
+                                <p style="font-size: 130%;">t a l v e z : / by KYOTTO</p>
+                            </li>
+
+                            <li>
+                                <p style="font-size: 130%;">Ya no me quiere como antes by KYOTTO</p>
+                            </li>
+
+                            <li>
+                                <p style="font-size: 130%;">Dance With The Devil by Breaking Benjamin</p>
+                            </li>
+
+                            <li>
+                                <p style="font-size: 130%;">PIXELATED KISSES by Joji</p>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+                <div id="cover">
+
+                    <img src="spotify.jpg" width="200px" height="200px">
+
+                    <img class="top" src="pixelatedkisses.png" width="150px" height="150px">
+
+                </div>
+
+            </div>
+
+    </div>
+    </section>
+
+    <p></p>
+
+    <table class="biography" border="1">
+
+        <thead>
+
+            <tr>
+
+                <th>
+                    <p style="font-size: 130%; font-family: 'Garamond', sans-serif; ">Place</p>
+                </th>
+                <th>
+                    <p style="font-size: 130%; font-family: 'Garamond', sans-serif; ">Rate 1-10 (How much would I'd like
+                        to visit it)</p>
+                </th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+
+            <tr>
+
+                <td style="font-family: 'Intern', sans-serif; color: #FFF4BF">Chongqing</td>
+                <td style="font-family: 'Intern', sans-serif; color: #FFF4BF">10 out of 10</td>
+
+            </tr>
+
+            <tr>
+
+                <td style="font-family: 'Intern', sans-serif; color: #FFF4BF">Barcelona</td>
+                <td style="font-family: 'Intern', sans-serif; color: #FFF4BF">8 out of 10</td>
+
+            </tr>
+
+            <img src="canada.png" style="float: right; width: 250px; height: 250px;" alt="Canada">
+            <tr>
+
+                <td style="font-family: 'Intern', sans-serif; color: #FFF4BF">Florence</td>
+                <td style="font-family: 'Intern', sans-serif; color: #FFF4BF">9 out of 10</td>
+
+            </tr>
+
+            <tr>
+
+                <td style="font-family: 'Intern', sans-serif; color: #FFF4BF">Churchill</td>
+                <td style="font-family: 'Intern', sans-serif; color: #FFF4BF">10 out of 10</td>
+
+            </tr>
+
+
+
+
+        </tbody>
+
+    </table>
+
+    <form class="biography" method="post" action="https://www.google.com/?zx=1789846114575">
+        <h3>Please Complete The Following Forms</h3>
+        <label style="color: #FFF4BF">"Please enter a country you would recommend me to visit in 2027: "
+            <br>
+            <textarea name="placeToVisit" rows="4" cols="36"> Enter place here.
+			</textarea>
+        </label>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+
+        <label style="color: #FFF4BF"> "What would you rate my performance as a student or classmate?
+            <select name="rating">
+                <option selected>Amazing</option>
+                <option>5</option>
+                <option>4</option>
+                <option>3</option>
+                <option>2</option>
+                <option>1</option>
+                <option>Awful</option>
+            </select>
+        </label>
+
+        <p>
+            <label> "Please enter your e-mail address for future contact"
+                <input name="email" type="password" size="40">
+            </label>
+        </p>
+
+    </form>
+
+    <section class="biography">
+        <h2>Drawing Canvas</h2>
+        <p>Hold Ctrl to draw blue or Shift to draw red.</p>
+
+        <table id="canvas">
+            <tbody id="tablebody"></tbody>
+        </table>
+    </section>
+
+    <section class="biography">
+
+        <h2>Time Spent on This Webpage</h2>
+
+        <p>
+            You have spent
+            <span id="soFar">0</span>
+            seconds on this webpage.
+        </p>
+
+    </section>
+
+</body>
+
+</html>
