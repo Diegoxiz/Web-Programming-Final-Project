@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Personal Page</title>
+    <style type="text/css">
+        @media all {
+            p {
+                font-family: georgia, serif;
+            }
+
+            h1 {
+                color: MediumVioletRed;
+                font-family: courier new, monospace;
+            }
+
+            body {
+                background-color: MistyRose;
+            }
+
+            h2 {
+                color: DarkBlue;
+                font-family: courier new, monospace;
+            }
+
+            section {
+                border: 5px groove CornflowerBlue;
+            }
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            p {
+                font-family: georgia, serif;
+            }
+
+            h1 {
+                color: Black;
+                font-family: didot, serif;
+                font-weight: 600;
+            }
+
+            h2 {
+                color: Black;
+                font-family: didot, serif;
+                font-weight: 600;
+            }
+
+            section {
+                border: 5px solid aliceblue;
+            }
+        }
+    </style>
+
+    <script>
+
+        //Variables 
+        var now = new Date();
+        var hour = now.getHours();
+
+        //Time Operations
+        if (hour < 12)
+            document.writeln("<h1>Good morning!</h1>");
+
+        if (hour >= 12) {
+            if (hour < 18)
+                document.writeln("<h1>Good afternoon!</h1>");
+
+            if (hour >= 18)
+                document.writeln("<h1>Good evening!</h1>");
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h1 class="special">Self Introduction:</h1>
+    <section>
+        <p>
+            My name is Valeria Rondon. I am studying at the University of Houston-Downtown. I graduated from Infinity
+            Early College High School in Spring of 2024 and earned college credits at Lone Star College Kingwood. I also
+            earned my Associate's of Arts at Lone Star College Kingwood. I started studying at UHD in the Fall of 2024.
+            I am majoring in Computer Science and will graduate this December. I enjoy playing video games, listening to
+            music, and watching tv. My favorite video game series is Kingdom Hearts. It is also the game series I am
+            currently playing. Aside from Web Programming, the classes I am taking this semster are Programming Language
+            Concepts, Data Structures and Algorithms with Python, and Senior Project. For my senior project, I am
+            working on a video game to find hidden objects. I am working on scripts to click on the objects and to
+            randomize which are on the lists. I am thinking about getting a Master’s in data science or in Artifial
+            Intelligence. I am currently applying for internships for next Spring. I am hoping to work in the Houston
+            area. The picture I have attached is of a Disney Cruise I took in May for my birthday with my family. I hope
+            to pass this semester with only A’s and B's.
+        </p>
+    </section>
+    <h1 class="special">Profile Picture:</h1>
+    <p>
+        <img src="Self Portrait Photo.jpeg" width="250" height="370" alt="Profie Picture JPEG">
+    </p>
+
+    <h2 class="special">UHD Link:</h2>
+    <li><a href="https://www.uhd.edu/">UHD's Website</a></li>
+
+    <h2 class="special">What I would like to continue learning in computer science:</h2>
+    <ul>
+        <li>AI</li>
+        <ol>
+            <li>How to build large language models.</li>
+        </ol>
+        <li>How to use iCloud services:</li>
+        <ol>
+            <li>Azure</li>
+            <li>AWS</li>
+        </ol>
+        <li>How to use Software Deployment services:</li>
+        <ol>
+            <li>Unreal</li>
+            <li>Chef</li>
+            <li>.Net</li>
+        </ol>
+        <li>How to use data visualization tools:</li>
+        <ol>
+            <li>Tableau</li>
+            <li>Power Bi</li>
+        </ol>
+        <li>How to use version control systems:</li>
+        <ol>
+            <li>Git</li>
+            <li>GitHub</li>
+        </ol>
+    </ul>
+
+
+    <table border="3">
+        <caption><strong>Table of Programming Projects</strong></caption>
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Programming Language</th>
+                <th>Group Project?</th>
+                <th>Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Schedule Organizer</td>
+                <td>Java</td>
+                <td>No</td>
+                <td>Object-Oriented Programming</td>
+            </tr>
+            <tr>
+                <td>Movie Storage System</td>
+                <td>Python</td>
+                <td>Yes</td>
+                <td>Software Engineering</td>
+            </tr>
+            <tr>
+                <td>Parks Database</td>
+                <td>SQL</td>
+                <td>No</td>
+                <td>Database Systems</td>
+            </tr>
+            <tr>
+                <td>Policing Car</td>
+                <td>Python</td>
+                <td>Yes</td>
+                <td>Robotics</td>
+            </tr>
+            <tr>
+                <td>The Lost Runner</td>
+                <td>C#</td>
+                <td>Yes</td>
+                <td>Fundamentals of Game Development</td>
+            </tr>
+            <tr>
+                <td>Game Development for Hidden Objects</td>
+                <td>C#</td>
+                <td>No</td>
+                <td>Senior Project</td>
+            </tr>
+        </tbody>
+</body>
+
+</html>
