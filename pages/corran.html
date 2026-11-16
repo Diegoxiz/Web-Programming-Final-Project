@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+
+    <style type="text/css">
+        body {
+            font-family: Verdana, Arial, sans-serif;
+        }
+
+        h1,
+        h2 {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        h3 {
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+
+        table {
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        caption {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+
+        body {
+            color: #333333;
+        }
+
+        h1 {
+            color: #b22222;
+        }
+
+        h2 {
+            color: navy;
+        }
+
+        h3 {
+            color: darkgreen;
+        }
+
+        a {
+            color: #ff6600;
+        }
+
+        a:hover {
+            color: purple;
+        }
+
+        strong {
+            color: maroon;
+        }
+
+        th {
+            color: white;
+            background-color: navy;
+        }
+
+        td {
+            color: #2f4f4f;
+        }
+
+        li {
+            color: #4b0082;
+        }
+
+
+
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-200px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        img {
+            animation-name: slideIn;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-out;
+        }
+
+
+        @keyframes pulse {
+            0% {
+                color: #b22222;
+                transform: scale(1);
+            }
+
+            50% {
+                color: #ff6600;
+                transform: scale(1.05);
+            }
+
+            100% {
+                color: #b22222;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            display: inline-block;
+            animation-name: pulse;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+
+        @media screen and (max-width: 700px) {
+            body {
+                font-size: 14px;
+                background-color: #f0f8ff;
+            }
+
+            /* light blue background on small screens */
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            img {
+                width: 100%;
+                /* photo shrinks to fit the screen */
+                height: auto;
+                max-width: 400px;
+            }
+
+            table {
+                width: 100%;
+                font-size: 12px;
+            }
+        }
+
+
+        #greeting {
+            font-size: 18px;
+            font-weight: bold;
+            color: #b22222;
+        }
+
+        #factText {
+            font-style: italic;
+            color: navy;
+        }
+
+        button {
+            font-family: Verdana, Arial, sans-serif;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function showGreeting() {
+            var now = new Date();             // current date and time
+            var hour = now.getHours();        // 0 - 23
+            var message;
+
+            if (hour < 12)
+                message = "Good Morning";
+            else if (hour < 18)
+                message = "Good Afternoon";
+            else
+                message = "Good Evening";
+
+            document.getElementById("greeting").innerHTML =
+                message + "! Thanks for visiting my page. Today is " +
+                now.toDateString() + ".";
+        }
+
+        var facts = [
+            "I have worked at Whataburger for over five years.",
+            "I enjoy rock climbing and going to the gym.",
+            "I like building my own PCs.",
+            "My favorite game of all time is Black Ops 2.",
+            "I graduated from Tomball High School in 2021.",
+            "I could spend hours looking at PC parts at Micro Center."
+        ];
+
+        var clickCount = 0;   // counts how many facts were shown
+
+        function showFact() {
+            var index = Math.floor(Math.random() * facts.length);
+            clickCount = clickCount + 1;
+
+            document.getElementById("factText").innerHTML =
+                "Fun fact #" + clickCount + ": " + facts[index];
+        }
+
+        // run showGreeting once the page has finished loading
+        window.addEventListener("load", showGreeting, false);
+    </script>
+</head>
+
+<body>
+    <p id="greeting"></p>
+
+    <h1>Here is a photo of me</h1><br>
+    <img src="me.png" width="400" height="400" alt="Photo of Corran">
+
+    <h2>Here is my favorite webpage:</h2>
+    <p><strong>Click a name to visit that site.</strong></p>
+
+    <p><a href="http://www.youtube.com">YouTube</a></p>
+
+    <h3>About Me</h3>
+    <p>Hello my name is Corran Chastain. I’m currently enrolled at University of Houston-Downtown
+        and I’m studying for a bachelor’s degree in computer science. My working experience is
+        Five Years and Six Months at Whataburger. Some of my favorite hobbies I enjoy is going to
+        the gym, rock climbing, and playing Video Games. I also thoroughly enjoy driving around the
+        Houston area to see what new things there are. I graduated from Tomball High School back in
+        2021, right after Graduating, I went straight to Lonestar College to get my basics out of the
+        way, then I transferred to University of Houston-Downtown to finish my degree. While I enjoy
+        going to University of Houston-Downtown, I find it kind of annoying having to either drive
+        around an hour to get here or take the bus which is like an hour and thirty minutes. My family
+        and my friends also support my life decisions, and they are super supportive of what I do in
+        my life. Oh, I also enjoy building computers and going to Micro Center to look at PC parts that
+        are way too expensive.
+    </p>
+
+    <!-- HW5: clicking the button runs the showFact() JavaScript function -->
+    <h3>Fun Facts About Me</h3>
+    <button type="button" onclick="showFact()">Show me a fun fact</button>
+    <p id="factText">Click the button to see a random fact about me.</p>
+
+    <table border="1">
+        <caption><strong>My Favorite Sports Teams/Video Games/Songs</strong></caption>
+
+        <thead>
+            <tr>
+                <th>Favorite Sports Team</th>
+                <th>Favorite Video Game</th>
+                <th>Favorite Songs</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Houston Texans</td>
+                <td>Skyrim</td>
+                <td>Painless by Josh a</td>
+            </tr>
+            <tr>
+                <td>Houston Astros</td>
+                <td>Minecraft</td>
+                <td>Rather Be by Clean Bandit</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>My Favorite Music Genres</h3>
+    <ul>
+        <li>Hip pop</li>
+        <li>Rap</li>
+        <li>Breakcore</li>
+    </ul>
+
+    <h3>States I Have Visited</h3>
+    <ul>
+        <li>Texas</li>
+        <li>New York</li>
+        <li>Florida</li>
+    </ul>
+
+    <h3>My Top 3 Video Games</h3>
+    <ol>
+        <li>Black Ops 2</li>
+        <li>Skyrim</li>
+        <li>Minecraft</li>
+    </ol>
+
+</body>
+
+</html>
