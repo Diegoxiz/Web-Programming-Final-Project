@@ -1,0 +1,10 @@
+/* External style sheet */
+h1	 {font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+	  color: white;
+	  border: 2px solid navy;
+	   padding: 5px 20px;
+	   background: #172033;
+	   width: 400px;
+	   text-align: center;
+	   border-radius: 15px;
+	   margin-bottom: 20px;}
