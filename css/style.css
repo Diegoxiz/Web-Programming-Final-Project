@@ -1,5 +1,9 @@
 /* Heading Style */
 h1 {
+    position: absolute;
+	top: 0px;
+	left: 600px;
+    font-size: 3em;
     font-family: "Avantgarde", "TeX Gyre Adventor", "URW Gothic L", sans-serif;
     color: white;
     border: 2px solid navy;
@@ -9,4 +13,68 @@ h1 {
     text-align: center;
     border-radius: 15px;
     margin-bottom: 20px;
+}
+body	{font-family: Verdana;}
+.hero {
+    border: 2px solid #DCE7F5;
+	padding: 5px 20px;
+	background: skyblue;
+	width: 520px;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+.team-section {
+    position: relative;
+	top: 250px;
+	border: 2px solid #DCE7F5;
+	padding: 5px 20px;
+	background: #DCE7F5;
+	width: 600px;
+	text-align: center;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+.summary {
+    position: absolute;
+	top: 150px;
+	left: 800px;
+	border: 2px solid #DCE7F5;
+	padding: 5px 20px;
+	background: #DCE7F5;
+	width: 800px;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+.section-heading {
+    font-size: 1.5em;
+	text-align: center;
+}
+.bento-grid {
+    font-size: 1.0em;
+	text-align: left;
+}
+.description {
+    position: absolute;
+	top: 150px;
+	left: 150px;
+	color: white;
+	border: 2px solid #526B91;
+	padding: 5px 20px;
+	background: #526B91;
+	width: 200px;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+.year 	   {
+    position: relative;
+	left: 1500px;
+    font-size: 5em;
+	text-shadow: -4px 4px 6px whitesmoke;
+	color: white;
+	border: 2px solid #526B91;
+	padding: 1px 20px;
+	background: #526B91;
+	width: 200px;
+	border-radius: 15px;
+	margin-bottom: 20px;
 }
